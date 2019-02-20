@@ -1,0 +1,10 @@
+<h1>Click a Store to View Items</h1>
+<hr />
+<%= link_to 'Create a new store', new_store_path%>
+<%#= link_to 'Create a new store', new_store_item_path(@store)%>
+
+<ul> 
+  <% @stores.each do |store| %>
+    <li><%= link_to store.name, store %></li>
+  <% end %>
+</ul>
